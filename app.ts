@@ -9,6 +9,10 @@ const add = (n1: number, n2: number, showResult: boolean, phrase: string) => {
 
 add(1, 2, true, "testing");
 
+const printResult = (num: number):void => { //void is not necessary, its implicitly infered
+    console.log(`Result ${num}`)
+}
+
 
 type Combinable = number | string; // a way to do union types
 
@@ -22,3 +26,4 @@ console.log(combinedAges);
 
 const combinedNames = combine('Max', 'Anna');
 console.log(combinedNames);
+
