@@ -13,6 +13,8 @@ const printResult = (num: number):void => { //void is not necessary, its implici
     console.log(`Result ${num}`)
 }
 
+let combineValues: (a: number, b: number) => number; // takes in a function with 2 arguments that are numbers and returns a number
+
 
 type Combinable = number | string; // a way to do union types
 
